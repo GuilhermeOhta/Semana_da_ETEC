@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isso é DS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <header>
+    <a href="index.html"><button class="etec-btn">HOME</button></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Sobre Nós.html">Sobre Nós</a></li>
+        <li><a href="Semana da ETEC.html">Semana da ETEC</a></li>
+        <li><a href="MusiMento.html">MusiMento</a></li>
+        <li><a href="Quiz.html">???</a></li>
+        <li><a href="Isso é DS.html">Isso é DS</a></li>
+      </ul>
+    </nav>
+    <a href="contato.html"><button class="contato-btn"> Contato</button></a>     
+  </header>
+
+</head>
+<body>
+
+<script>
+  const musicas = {
+    triste: {
+      ajuda: ["Fix You - Coldplay", "Someone Like You - Adele", "Stay With Me - Sam Smith"],
+      atrapalha: ["Happy - Pharrell Williams", "Can't Stop the Feeling - Justin Timberlake", "Uptown Funk - Bruno Mars"]
+    },
+    feliz: {
+      ajuda: ["Happy - Pharrell Williams", "Uptown Funk - Bruno Mars", "Can't Stop the Feeling - Justin Timberlake"],
+      atrapalha: ["Tears in Heaven - Eric Clapton", "Hurt - Johnny Cash", "Skinny Love - Bon Iver"]
+    },
+    estressado: {
+      ajuda: ["Weightless - Marconi Union", "Clair de Lune - Debussy", "Electra - Airstream"],
+      atrapalha: ["Thunderstruck - AC/DC", "Sandstorm - Darude", "Eye of the Tiger - Survivor"]
+    },
+    concentrado: {
+      ajuda: ["Time - Hans Zimmer", "River Flows in You - Yiruma", "Gymnopédie No.1 - Satie"],
+      atrapalha: ["Party Rock Anthem - LMFAO", "Macarena - Los Del Rio", "Cotton Eye Joe - Rednex"]
+    }
+  };
+
+  function mostrarMusicas() {
+    const situacao = document.getElementById("situacao").value;
+    const resultado = document.getElementById("resultado");
+
+    if (!situacao) {
+      resultado.innerHTML = "<p>Por favor, selecione uma situação.</p>";
+      return;
+    }
+
+    const sugestoes = musicas[situacao];
+    resultado.innerHTML = `
+      <h3>Músicas que ajudam:</h3>
+      <ul>${sugestoes.ajuda.map(m => `<li>🎵 ${m}</li>`).join("")}</ul>
+      <h3>Músicas que atrapalham:</h3>
+      <ul>${sugestoes.atrapalha.map(m => `<li>⚠️ ${m}</li>`).join("")}</ul>
+    `;
+  }
+</script>
+
+<section id="quiz">
+
+  <h1 class="quiz-titulo">🎯 Quiz</h1>
+
+  <div class="quiz-container">
+    <h2>Descubra a música certa para o seu momento</h2>
+    <p>Escolha uma situação e veja sugestões de músicas que podem ajudar ou atrapalhar seu humor:</p>
+
+    <select id="situacao">
+      <option value="">--Selecione--</option>
+      <option value="triste">Estou triste</option>
+      <option value="feliz">Estou feliz</option>
+      <option value="estressado">Estou estressado</option>
+      <option value="concentrado">Preciso me concentrar</option>
+    </select>
+
+    <button onclick="mostrarMusicas()">Ver músicas 🎧</button>
+
+    <div id="resultado"></div>
+  </div>
+</section>
+
+<style>
+  #quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    padding: 20px;
+  }
+
+  .quiz-titulo {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .quiz-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .quiz-container:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s;
+  }
+
+  select:focus {
+    border-color: #ffcc00;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;  
+    color: #fff;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+  }
+
+  #resultado {
+    margin-top: 25px;
+    text-align: left;
+  }
+
+  #resultado h3 {
+    color: #444;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  #resultado ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #resultado li {
+    padding: 6px 0;
+    font-size: 1rem;
+  }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isso é DS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <header>
+    <a href="index.html"><button class="etec-btn">HOME</button></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Sobre Nós.html">Sobre Nós</a></li>
+        <li><a href="Semana da ETEC.html">Semana da ETEC</a></li>
+        <li><a href="MusiMento.html">MusiMento</a></li>
+        <li><a href="Quiz.html">???</a></li>
+        <li><a href="Isso é DS.html">Isso é DS</a></li>
+      </ul>
+    </nav>
+    <a href="contato.html"><button class="contato-btn">Contato</button></a>
+  </header>
+
+  <style>
+
+    body{
+      overflow-y: hidden;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      padding: 1rem;
+      max-width: 350px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      justify-content: space-around;
+      flex-direction: row; 
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;     
+      justify-content: center;
+      gap: 2%;          
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      color: #142e61;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: white;
+      text-align: center;
+      margin-top: 8rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+    }
+
+    .highlight {
+      color: midnightblue;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      margin-top: 2rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        max-width: 90%;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+    <h1>Isso é <span class="highlight">Desenvolvimento de Sistemas</span></h1>
+
+  <main>
+    <div class="card">
+      <h2> O Curso</h2>
+      <ul>
+      <li >O curso técnico em <strong>Desenvolvimento de Sistemas</strong> forma profissionais capazes de planejar, desenvolver e manter sistemas digitais. Ele combina lógica, criatividade e inovação, preparando o aluno para o mercado de tecnologia.</li>
+      <br> <li>Sendo um dos cursos <strong>mais desafiadores </strong>  o técnico em Desenvolvimento de Sistemas prepara você para encarar qualquer área do futuro: <strong>Inteligência Artificial, Mercado de Ações ou Empreendedorismo</strong>. Uma formação intensa, onde apenas os mais dedicados realmente dominam as habilidades que o mundo moderno exige.</li> </div>
+      </ul>
+    <div class="card">
+      <h2> Disciplinas Técnicas</h2>
+      <ul>
+        <li><strong>APS (Análise e Projeto de Sistemas):</strong> Estudo de metodologias, fluxogramas e modelagem de sistemas usando diagramas técnicos.</li>
+        <li><strong>BD (Banco de Dados):</strong> Modelagem e manipulação de dados com SQL e uso de sistemas de gerenciamento como o SQL Server.</li>
+        <li><strong>TPA (Técnicas de Programação e Algoritmos):</strong> Desenvolvimento do raciocínio lógico e da base da programação estruturada.</li>
+        <li><strong>FIF (Fundamentos da Informática):</strong> Conceitos básicos de hardware, software, sistemas operacionais e redes.</li>
+        <li><strong>DDL (Design Digital):</strong> Criação de interfaces, edição de imagens e design visual aplicado a projetos digitais.</li>
+        <li><strong>PWE (Programação para Web):</strong> Desenvolvimento de sites e aplicações utilizando HTML, CSS, JavaScript e tecnologias web.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2> Aplicativos e Ferramentas</h2>
+      <ul>
+        <li><strong>Visual Studio Code:</strong> Editor leve e versátil usado para programar em diversas linguagens.</li>
+        <li><strong>Visual Studio 2022:</strong> Ambiente profissional de desenvolvimento para projetos robustos e complexos.</li>
+        <li><strong>Portugol Studio:</strong> Software educativo para criação de algoritmos e introdução à lógica de programação.</li>
+        <li><strong>SQL Server Management Studio (SSMS):</strong> Plataforma para criação, consulta e administração de bancos de dados.</li>
+        <li><strong>Microsoft Visio:</strong> Criação de diagramas e modelagem de sistemas.</li>
+        <li><strong>Prompt de Comando:</strong> Execução de comandos e automações no ambiente Windows.</li>
+        <li><strong>Adobe Photoshop:</strong> Criação e edição de elementos gráficos e visuais para design digital.</li>
+        <li><strong>Pacote Office:</strong> Word, Excel e PowerPoint para relatórios, planilhas e apresentações técnicas.</li>
+      </ul>
+    </div>
+
+<div class="card">
+  <h2>Por que escolher DS?</h2>
+  <ul>
+    <li>
+      <b>O curso é dinâmico</b>, criativo e preparado para o futuro.
+      Ele forma profissionais completos, prontos para atuar em 
+      <b>programação, design, análise de sistemas e inovação tecnológica.</b>
+    </li>
+    <br>
+    <li>
+      Com esse leque de possibilidades, <b>não tem lugar que você vai ficar sem fazer nada</b>.
+      Essa profissão é uma das mais flexíveis no mercado de trabalho.
+    </li>
+  </ul>
+</div>
+    
+  </main>
+</body>
+</html>

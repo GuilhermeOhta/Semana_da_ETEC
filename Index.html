@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isso é DS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <header>
+    <a href="index.html"><button class="etec-btn">HOME</button></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Sobre Nós.html">Sobre Nós</a></li>
+        <li><a href="Semana da ETEC.html">Semana da ETEC</a></li>
+        <li><a href="MusiMento.html">MusiMento</a></li>
+        <li><a href="Quiz.html">???</a></li>
+        <li><a href="Isso é DS.html">Isso é DS</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+      </ul>
+      <a href="contato.html"><button class="contato-btn">Contato</button></a>
+    </nav>
+  </header>
+</head>
+<body>
+
+<main class="home-container">
+  <section class="hero">
+    <div class="hero-text animate-slide">
+      <h1 style="color:green">Bem Vindo(a) a <span class="highlight" style="color: darkblue;">Semana da ETEC</span></h1>
+      <p>Explore o universo do <strong>Curso Técnico em Desenvolvimento de Sistemas</strong>.  
+      Conheça Programação, Análise e Design, e Web e Banco de Dados em detalhes, com exemplos práticos e inspiradores!</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <a href="https://www.codecademy.com/?g_network=g&g_productchannel=&g_adid=528849219280" class="feature-card animate-fade">
+      <h2> Programação</h2>
+      <p>Aprenda linguagens e algoritmos para desenvolver softwares completos e resolver problemas reais.</p>
+    </a>
+
+    <a href="https://pt.squarespace.com/websites/criar-um-portfolio" class="feature-card animate-fade">
+      <h2> Análise e Design</h2>
+      <p>Transforme ideias em sistemas funcionais usando modelagem, fluxogramas e diagramas de sistemas.</p>
+    </a>
+
+    <a href="https://www.alura.com.br/artigos/banco-de-dados" class="feature-card animate-fade">
+      <h2> Web e Banco de Dados</h2>
+      <p>Desenvolva sites, aplicações web e gerencie dados com bancos de dados profissionais.</p>
+    </a>
+  </section>
+</main>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #227bff , #9bd5fc);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ffcc00;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.15);
+}
+
+.feature-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #1E90FF;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slide {
+  animation: slideIn 1s forwards;
+}
+
+.animate-fade {
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<script>
+// Animação sequencial dos cards
+const cards = document.querySelectorAll('.feature-card');
+cards.forEach((card, index) => {
+  card.style.animationDelay = `${index * 0.3 + 0.5}s`;
+});
+</script>
+
+</body>
+</html>

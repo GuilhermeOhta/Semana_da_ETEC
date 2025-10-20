@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><button class="etec-btn">HOME</button></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Sobre Nós.html">Sobre Nós</a></li>
+        <li><a href="Semana da ETEC.html">Semana da ETEC</a></li>
+        <li><a href="MusiMento.html">MusiMento</a></li>
+        <li><a href="Quiz.html">???</a></li>
+        <li><a href="Isso é DS.html">Isso é DS</a></li>
+      </ul>
+    </nav>
+    <a href="contato.html"><button class="contato-btn">Contato</button></a>
+  </header>
+
+ <style>
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      color: #333;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+      animation: fadeIn 1s ease;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .card {
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 340px;
+      text-align: left;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .gui {
+      background: linear-gradient(145deg, #e8f0ff, #ffffff);
+      border-left: 6px solid #dff045;
+    }
+
+    .nicolas {
+      background: linear-gradient(145deg, #fbe8ff, #ffffff);
+      border-left: 6px solid #f781ed;
+    }
+
+    .card h2 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .traits {
+      margin: 15px 0;
+      padding-left: 15px;
+    }
+
+    .traits li {
+      margin: 6px 0;
+      color: #444;
+    }
+
+    .goal {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-style: italic;
+      color: #333333;
+    }
+
+    .etec-info {
+      margin-top: 50px;
+      color: #333;
+      font-size: 1.05rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(172, 255, 199) ;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px ;
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 800px) {
+      .about {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+    <h1>Sobre Nós</h1>
+
+    <div class="about">
+      <div class="card gui">
+        <h2>Guilherme Ryuki Ohta</h2>
+        <p><span class="highlight">16 anos</span> — Aluno da <strong>ETEC Lauro Gomes</strong>, cursando o 1º ano do Ensino Médio com habilitação em <strong>Desenvolvimento de Sistemas</strong>.</p>
+
+        <ul class="traits">
+          <li>Competitivo e determinado.</li>
+          <li>Pensamento rápido e analítico.</li>
+          <li>Tranquilo e focado no que faz.</li>
+        </ul>
+
+        <div class="goal">
+          “Gosto de programar, resolver desafios e me superar a cada novo projeto.”
+        </div>
+      </div>
+
+      <div class="card nicolas">
+        <h2>Nicolas de Assis Silva</h2>
+        <p><span class="highlight">16 anos</span> — Estudante da <strong>ETEC Lauro Gomes</strong>, também no curso de <strong>Desenvolvimento de Sistemas</strong>.</p>
+
+        <ul class="traits">
+          <li>Sociável e extrovertido.</li>
+          <li>Não tem medo de se expressar.</li>
+          <li>Humilde e sempre disposto a aprender.</li>
+        </ul>
+
+        <div class="goal">
+          “Busco crescer como programador e usar a tecnologia para fazer a diferença.”
+        </div>
+      </div>
+    </div>
+
+    <p class="etec-info">
+      Somos alunos da <strong>ETEC Lauro Gomes</strong>, em São Bernardo do Campo.  
+      Unidos pelo interesse em tecnologia e programação, buscamos evoluir juntos e construir um futuro promissor na área de <strong>Desenvolvimento de Sistemas</strong>.
+    </p>
+  </div>
+
+</body>
+</html>
+
+

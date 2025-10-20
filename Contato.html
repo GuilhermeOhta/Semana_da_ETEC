@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
+
+  <header>
+
+     <a href="index.html"><button class="etec-btn">HOME</button></a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Sobre Nós.html">Sobre Nós</a></li>
+        <li><a href="Semana da ETEC.html">Semana da ETEC</a></li>
+        <li><a href="MusiMento.html">MusiMento</a></li>
+        <li><a href="Quiz.html">???</a></li>
+        <li><a href="Isso é DS.html">Isso é DS</a></li>
+      </ul>
+    </nav>
+
+    <a href="contato.html"><button class="contato-btn">Contato</button></a>
+    
+  </header>
+
+  <style>
+
+    body{
+        background: linear-gradient(135deg, #93ffdf, #efff94);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .contact-card {
+      background-color: #fff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    .contact-card h2 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .contact-card p {
+      margin: 10px 0;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .contact-card a {
+      color: #016dac;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-card a:hover {
+      color: #016dac;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 650px) {
+      .contacts {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    
+  <div class="container">
+    <h1>Entre em Contato Conosco</h1>
+
+     <div class="contacts">
+     
+      <div class="contact-card">
+        <h2>Guilherme Ryuki Ohta</h2>
+        <p>Instagram: <a href="https://instagram.com/gui_ohta" target="_blank">@gui_ohta</a></p>
+        <p>WhatsApp: <a href="https://wa.me/5511998694692" target="_blank">(11) 99869-4692</a></p>
+        <p>Email: <a href="mailto:guiguiohta@gmail.com">guilherme.ohta01@etec.sp.gov.br</a></p>
+      </div>
+    
+      <div class="contact-card">
+        <h2>Nicolas de Assis Silva</h2>
+        <p>Instagram: <a href="https://instagram.com/assis.silvaxxz" target="_blank">@assis.silvaxxz</a></p>
+        <p>WhatsApp: <a href="https://wa.me/5511991788807" target="_blank">(11) 93944-5021</a></p>
+        <p>Email: <a href="mailto:nicolas.silva446@etec.sp.gov.br">nicolas.silva446@etec.sp.gov.br</a></p>
+      </div>
+    </div>
+  </div>
+</head>
+<body>
+
+
+</body>
+</html>
